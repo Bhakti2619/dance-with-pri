@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dance with Pri Classes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+:root{color-scheme:light}
+body{margin:0;background:#FDF6F8;font-family:'PT Serif',serif;color:#3A1F33}
+h1,h2,h3{font-family:'Poppins',sans-serif;margin:0;font-weight:700}
+a{color:#3A1F33;text-decoration:none}
+a:hover{color:#A65176}
+.btn-accent{display:inline-flex;align-items:center;justify-content:center;padding:17px 38px;background:#F0BFCC;color:#3A1F33;font-family:'Poppins',sans-serif;font-size:15px;font-weight:600}
+.btn-accent:hover{background:#e3a8ba}
+.btn-ink{display:inline-flex;align-items:center;justify-content:center;padding:17px 38px;background:#6b4560;color:#FDF6F8;font-family:'Poppins',sans-serif;font-size:15px;font-weight:600}
+.btn-ink:hover{background:#5a3a52}
+@media (max-width:680px){
+  h1{font-size:clamp(26px,8vw,34px)!important;line-height:1.2!important}
+  h2{font-size:clamp(20px,6vw,28px)!important}
+  [style*="grid-template-columns:repeat"]{grid-template-columns:1fr!important}
+  [style*="56px"]{padding-left:16px!important;padding-right:16px!important}
+  [style*="gap:36px"],[style*="gap:56px"]{flex-wrap:wrap!important}
+}
+</style>
+</head>
+<body>
+
+<div style="width:100%;max-width:1440px;margin:0 auto;display:flex;flex-direction:column;overflow-x:hidden">
+
+  <!-- Nav -->
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:32px 56px;flex-wrap:wrap;gap:12px">
+    <div style="font-family:'Poppins',sans-serif;font-size:19px;font-weight:700;letter-spacing:.04em">DANCE WITH PRI</div>
+    <div style="display:flex;gap:36px;align-items:center;font-size:15px;font-family:'Poppins',sans-serif;font-weight:600;flex-wrap:wrap">
+      <a href="index.html">Home</a>
+      <a href="classes.html" style="color:#A65176">Classes</a>
+      <a href="about.html">About</a>
+      <a href="about.html#contact">Contact</a>
+      <a href="about.html#contact" class="btn-accent" style="padding:13px 26px;font-size:13px">Book a Trial</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <div style="padding:70px 56px 90px;display:flex;flex-direction:column;gap:22px;max-width:700px">
+    <h1 style="font-size:50px;line-height:1.1">Programs for every goal, every level.</h1>
+    <p style="font-size:17px;line-height:1.8;color:#6b4a61">Drop in for a single session or settle into a batch — new members join at the start of every month.</p>
+  </div>
+
+  <!-- Feature band (full-bleed photo) -->
+  <div style="position:relative;padding:90px 56px 70px;background:#8C6B82;overflow:hidden">
+    <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#e0cad8">[ Studio photo, full-bleed ]</span>
+    <div style="position:absolute;inset:0;background:rgba(60,40,55,.3)"></div>
+    <div style="position:relative;display:flex;flex-direction:column;align-items:center;gap:60px">
+      <h2 style="font-size:40px;color:#ffffff;text-align:center">Six programs, one studio</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;width:100%;max-width:1000px">
+        <div style="text-align:center">
+          <h3 style="font-size:19px;color:#ffffff;font-family:'Poppins',sans-serif">Bollywood</h3>
+          <p style="font-size:14px;color:#f1e3ea;margin-top:10px;line-height:1.6">High intensity · Beginner → Advanced</p>
+        </div>
+        <div style="text-align:center">
+          <h3 style="font-size:19px;color:#ffffff;font-family:'Poppins',sans-serif">Hip-Hop</h3>
+          <p style="font-size:14px;color:#f1e3ea;margin-top:10px;line-height:1.6">Moderate · All Levels</p>
+        </div>
+        <div style="text-align:center">
+          <h3 style="font-size:19px;color:#ffffff;font-family:'Poppins',sans-serif">Zumba &amp; Fitness</h3>
+          <p style="font-size:14px;color:#f1e3ea;margin-top:10px;line-height:1.6">High intensity · All Levels</p>
+        </div>
+        <div style="text-align:center">
+          <h3 style="font-size:19px;color:#ffffff;font-family:'Poppins',sans-serif">Freestyle &amp; Contemporary</h3>
+          <p style="font-size:14px;color:#f1e3ea;margin-top:10px;line-height:1.6">Moderate · Intermediate+</p>
+        </div>
+        <div style="text-align:center">
+          <h3 style="font-size:19px;color:#ffffff;font-family:'Poppins',sans-serif">Kids Batch</h3>
+          <p style="font-size:14px;color:#f1e3ea;margin-top:10px;line-height:1.6">Low impact · Ages 6–12</p>
+        </div>
+        <div style="text-align:center">
+          <h3 style="font-size:19px;color:#ffffff;font-family:'Poppins',sans-serif">Bridal &amp; Sangeet</h3>
+          <p style="font-size:14px;color:#f1e3ea;margin-top:10px;line-height:1.6">By appointment</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Schedule -->
+  <div style="padding:110px 56px 60px;display:flex;flex-direction:column;align-items:center;gap:50px">
+    <h2 style="font-size:36px">Weekly Timetable</h2>
+    <div style="display:flex;gap:56px;flex-wrap:wrap;justify-content:center">
+      <div style="text-align:center">
+        <div style="font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;color:#A65176;text-transform:uppercase">Mon</div>
+        <div style="font-size:17px;margin-top:8px">Bollywood</div>
+        <div style="font-size:13px;color:#8a6b80;margin-top:4px">[ 7–8 PM ]</div>
+      </div>
+      <div style="text-align:center">
+        <div style="font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;color:#A65176;text-transform:uppercase">Tue</div>
+        <div style="font-size:17px;margin-top:8px">Hip-Hop</div>
+        <div style="font-size:13px;color:#8a6b80;margin-top:4px">[ 7–8 PM ]</div>
+      </div>
+      <div style="text-align:center">
+        <div style="font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;color:#A65176;text-transform:uppercase">Wed</div>
+        <div style="font-size:17px;margin-top:8px">Zumba</div>
+        <div style="font-size:13px;color:#8a6b80;margin-top:4px">[ 6:30–7:30 PM ]</div>
+      </div>
+      <div style="text-align:center">
+        <div style="font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;color:#A65176;text-transform:uppercase">Thu</div>
+        <div style="font-size:17px;margin-top:8px">Freestyle</div>
+        <div style="font-size:13px;color:#8a6b80;margin-top:4px">[ 7–8 PM ]</div>
+      </div>
+      <div style="text-align:center">
+        <div style="font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;color:#A65176;text-transform:uppercase">Sat</div>
+        <div style="font-size:17px;margin-top:8px">Kids Batch</div>
+        <div style="font-size:13px;color:#8a6b80;margin-top:4px">[ 11 AM–12 PM ]</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pricing -->
+  <div style="padding:90px 56px 110px;display:flex;flex-direction:column;align-items:center;gap:70px">
+    <h2 style="font-size:28px;font-family:'PT Serif',serif;font-style:italic;font-weight:400;border-bottom:1px solid #3A1F33;padding-bottom:6px">Explore classes &amp; memberships</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:56px;width:100%;max-width:1100px;text-align:center">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:16px">
+        <div>
+          <h3 style="font-size:20px">Trial Class</h3>
+          <div style="font-size:16px;color:#6b4a61;margin-top:4px">Free</div>
+        </div>
+        <p style="font-size:14px;color:#6b4a61;line-height:1.7;max-width:260px">One class, on the house — see if it's a fit before you commit.</p>
+        <a href="about.html#contact" class="btn-ink">Get started</a>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:16px">
+        <div>
+          <h3 style="font-size:20px">Monthly Membership</h3>
+          <div style="font-size:16px;color:#6b4a61;margin-top:4px">[ ₹ Fee / mo ]</div>
+        </div>
+        <p style="font-size:14px;color:#6b4a61;line-height:1.7;max-width:260px">Unlimited classes across any single program, billed monthly.</p>
+        <a href="about.html#contact" class="btn-ink">Join now</a>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:16px">
+        <div>
+          <h3 style="font-size:20px">Quarterly — Best Value</h3>
+          <div style="font-size:16px;color:#6b4a61;margin-top:4px">[ ₹ Fee ]</div>
+        </div>
+        <p style="font-size:14px;color:#6b4a61;line-height:1.7;max-width:260px">Every program, every week, for three months.</p>
+        <a href="about.html#contact" class="btn-ink">Join now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mid CTA photo band -->
+  <div style="position:relative;height:380px;background:#8C6B82;display:flex;align-items:center;justify-content:center;overflow:hidden">
+    <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#e0cad8">[ Class photo, full-bleed ]</span>
+    <div style="position:absolute;inset:0;background:rgba(60,40,55,.22)"></div>
+    <div style="position:relative;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center">
+      <h2 style="font-size:34px;color:#ffffff">Still deciding? Try a class, free.</h2>
+      <a href="about.html#contact" class="btn-accent">Book a Trial</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="padding:60px 56px;display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap">
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font-family:'Poppins',sans-serif;font-size:19px;font-weight:700;letter-spacing:.04em">DANCE WITH PRI</div>
+      <div style="font-size:15px;color:#8a6b80">Dance &amp; fitness studio, Bangalore</div>
+    </div>
+    <div style="display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:10px;font-family:'Poppins',sans-serif;font-size:14px;font-weight:600">
+        <a href="classes.html" style="border-bottom:1px solid #3A1F33">Classes</a>
+        <a href="about.html" style="border-bottom:1px solid #3A1F33">About</a>
+        <a href="about.html#contact" style="border-bottom:1px solid #3A1F33">Contact</a>
+      </div>
+      <div style="font-size:14px;color:#8a6b80">@dancewithpri</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

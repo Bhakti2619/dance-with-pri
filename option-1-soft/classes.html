@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dance with Pri Classes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap">
+<style>
+:root{color-scheme:light}
+body{margin:0;background:#FBF7F3;font-family:'Jost',sans-serif;color:#3B2238;font-weight:300}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;margin:0;font-weight:500}
+a{color:#3B2238;text-decoration:none}
+a:hover{color:#C06B4D}
+.btn{display:inline-flex;align-items:center;padding:15px 30px;border-radius:999px;border:1px solid #3B2238;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.btn:hover{background:#3B2238;color:#FBF7F3}
+.btn-solid{background:#C06B4D;color:#FBF7F3;border:1px solid #C06B4D}
+.btn-solid:hover{background:#a85639;border-color:#a85639}
+.card{background:#FFFDFB;border-radius:24px;padding:32px}
+.pill{display:inline-block;padding:5px 14px;border-radius:999px;font-size:12px;letter-spacing:.03em}
+.row{display:flex;justify-content:space-between;padding:22px 0;border-bottom:1px solid #d8cdb8}
+@media (max-width:680px){
+  h1{font-size:clamp(26px,8vw,36px)!important;line-height:1.2!important}
+  h2{font-size:clamp(20px,6vw,28px)!important}
+  [style*="grid-template-columns:repeat"]{grid-template-columns:1fr!important}
+  [style*="72px"]{padding-left:16px!important;padding-right:16px!important}
+  [style*="gap:40px"],[style*="gap:24px"]{flex-wrap:wrap!important}
+  .row{flex-direction:column;gap:4px}
+}
+</style>
+</head>
+<body>
+
+<div style="width:100%;max-width:1440px;margin:0 auto;display:flex;flex-direction:column;overflow-x:hidden">
+
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:32px 72px;flex-wrap:wrap;gap:16px">
+    <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:26px">Dance with Pri</div>
+    <div style="display:flex;gap:40px;align-items:center;font-size:14px;letter-spacing:.04em;flex-wrap:wrap">
+      <a href="index.html">Home</a>
+      <a href="classes.html" style="border-bottom:1px solid #C06B4D;padding-bottom:4px">Classes</a>
+      <a href="about.html">About</a>
+      <a href="about.html#contact">Contact</a>
+      <a href="about.html#contact" class="btn">Book a Free Trial</a>
+    </div>
+  </div>
+
+  <div style="margin:24px 72px 0;background:#F3E4E0;border-radius:36px;padding:80px 72px;display:flex;flex-direction:column;gap:18px">
+    <div style="font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#C06B4D">Classes &amp; Schedule</div>
+    <h1 style="font-size:46px;max-width:680px">Programs for every goal and every level.</h1>
+    <p style="font-size:16px;max-width:560px;line-height:1.7;color:#5a4150">Drop in for a single session or settle into a batch — new members join at the start of every month.</p>
+  </div>
+
+  <!-- Classes -->
+  <div style="padding:90px 72px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+    <div class="card" style="display:flex;flex-direction:column;gap:14px">
+      <span class="pill" style="background:#F3E4E0;color:#C06B4D;width:fit-content">High Intensity</span>
+      <h3 style="font-size:22px;font-style:italic">Bollywood</h3>
+      <p style="font-size:14px;color:#5a4150;line-height:1.6;flex-grow:1">Film choreography, old-school to today's chartbusters.</p>
+      <div style="display:flex;justify-content:space-between;font-size:13px;color:#8a7682;padding-top:10px;border-top:1px solid #efe3e8">
+        <span>Beginner → Adv.</span><span>[ ₹ Fee / mo ]</span>
+      </div>
+    </div>
+    <div class="card" style="display:flex;flex-direction:column;gap:14px">
+      <span class="pill" style="background:#F3E4E0;color:#C06B4D;width:fit-content">High Intensity</span>
+      <h3 style="font-size:22px;font-style:italic">Zumba &amp; Fitness</h3>
+      <p style="font-size:14px;color:#5a4150;line-height:1.6;flex-grow:1">A full-body cardio format, open to every fitness level.</p>
+      <div style="display:flex;justify-content:space-between;font-size:13px;color:#8a7682;padding-top:10px;border-top:1px solid #efe3e8">
+        <span>All Levels</span><span>[ ₹ Fee / mo ]</span>
+      </div>
+    </div>
+    <div class="card" style="display:flex;flex-direction:column;gap:14px">
+      <span class="pill" style="background:#f0e6e8;color:#3B2238;width:fit-content">Moderate</span>
+      <h3 style="font-size:22px;font-style:italic">Hip-Hop</h3>
+      <p style="font-size:14px;color:#5a4150;line-height:1.6;flex-grow:1">Groove, isolations, and freestyle fundamentals.</p>
+      <div style="display:flex;justify-content:space-between;font-size:13px;color:#8a7682;padding-top:10px;border-top:1px solid #efe3e8">
+        <span>All Levels</span><span>[ ₹ Fee / mo ]</span>
+      </div>
+    </div>
+    <div class="card" style="display:flex;flex-direction:column;gap:14px">
+      <span class="pill" style="background:#f0e6e8;color:#3B2238;width:fit-content">Moderate</span>
+      <h3 style="font-size:22px;font-style:italic">Freestyle &amp; Contemporary</h3>
+      <p style="font-size:14px;color:#5a4150;line-height:1.6;flex-grow:1">Expressive movement for dancers finding their voice.</p>
+      <div style="display:flex;justify-content:space-between;font-size:13px;color:#8a7682;padding-top:10px;border-top:1px solid #efe3e8">
+        <span>Intermediate+</span><span>[ ₹ Fee / mo ]</span>
+      </div>
+    </div>
+    <div class="card" style="display:flex;flex-direction:column;gap:14px">
+      <span class="pill" style="background:#f0e6e8;color:#3B2238;width:fit-content">Low Impact</span>
+      <h3 style="font-size:22px;font-style:italic">Kids Batch</h3>
+      <p style="font-size:14px;color:#5a4150;line-height:1.6;flex-grow:1">A gentle, playful start to rhythm and performing, ages 6–12.</p>
+      <div style="display:flex;justify-content:space-between;font-size:13px;color:#8a7682;padding-top:10px;border-top:1px solid #efe3e8">
+        <span>Beginner</span><span>[ ₹ Fee / mo ]</span>
+      </div>
+    </div>
+    <div class="card" style="display:flex;flex-direction:column;gap:14px">
+      <span class="pill" style="background:#f0e6e8;color:#3B2238;width:fit-content">Moderate</span>
+      <h3 style="font-size:22px;font-style:italic">Bridal &amp; Sangeet</h3>
+      <p style="font-size:14px;color:#5a4150;line-height:1.6;flex-grow:1">Private sessions to build and polish your big-day routine.</p>
+      <div style="display:flex;justify-content:space-between;font-size:13px;color:#8a7682;padding-top:10px;border-top:1px solid #efe3e8">
+        <span>By Appointment</span><span>[ On Request ]</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Schedule -->
+  <div style="padding:0 72px 70px;display:flex;flex-direction:column;gap:28px">
+    <h2 style="font-size:28px">Weekly Timetable</h2>
+    <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px">
+      <div style="background:#F3E4E0;border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
+        <div style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#C06B4D">Mon</div>
+        <div style="font-size:14px">Bollywood<br><span style="color:#8a7682">[ 7–8 PM ]</span></div>
+      </div>
+      <div style="background:#F3E4E0;border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
+        <div style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#C06B4D">Tue</div>
+        <div style="font-size:14px">Hip-Hop<br><span style="color:#8a7682">[ 7–8 PM ]</span></div>
+      </div>
+      <div style="background:#F3E4E0;border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
+        <div style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#C06B4D">Wed</div>
+        <div style="font-size:14px">Zumba<br><span style="color:#8a7682">[ 6:30–7:30 PM ]</span></div>
+      </div>
+      <div style="background:#F3E4E0;border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
+        <div style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#C06B4D">Thu</div>
+        <div style="font-size:14px">Freestyle<br><span style="color:#8a7682">[ 7–8 PM ]</span></div>
+      </div>
+      <div style="background:#F3E4E0;border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
+        <div style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#C06B4D">Sat</div>
+        <div style="font-size:14px">Kids Batch<br><span style="color:#8a7682">[ 11 AM–12 PM ]</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pricing -->
+  <div style="padding:0 72px 100px;display:flex;flex-direction:column;gap:28px">
+    <h2 style="font-size:28px">Membership Plans</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+      <div class="card">
+        <div style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#C06B4D">Drop-In</div>
+        <div style="font-size:30px;font-style:italic;margin-top:6px">[ ₹ Fee ]</div>
+        <p style="font-family:'Jost',sans-serif;font-size:13px;color:#5a4150;line-height:1.6;margin-top:8px">One class, any program, no commitment.</p>
+      </div>
+      <div class="card" style="border:2px solid #C06B4D">
+        <div style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#C06B4D">Monthly — Most Popular</div>
+        <div style="font-size:30px;font-style:italic;margin-top:6px">[ ₹ Fee ]</div>
+        <p style="font-family:'Jost',sans-serif;font-size:13px;color:#5a4150;line-height:1.6;margin-top:8px">Unlimited classes across any single program.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#C06B4D">All-Access Quarterly</div>
+        <div style="font-size:30px;font-style:italic;margin-top:6px">[ ₹ Fee ]</div>
+        <p style="font-family:'Jost',sans-serif;font-size:13px;color:#5a4150;line-height:1.6;margin-top:8px">Every program, every week, for three months.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin:0 72px 72px;background:#3B2238;border-radius:32px;padding:70px 64px;display:flex;justify-content:space-between;align-items:center;color:#FBF7F3;flex-wrap:wrap;gap:24px">
+    <h2 style="font-size:30px;font-style:italic;max-width:520px;color:#FBF7F3">Still deciding? Try a class, free.</h2>
+    <a href="about.html#contact" class="btn btn-solid">Book a Free Trial Class</a>
+  </div>
+
+  <div style="padding:48px 72px;display:flex;justify-content:space-between;gap:40px;border-top:1px solid #ecdcd4;flex-wrap:wrap">
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px">Dance with Pri</div>
+      <div style="font-size:14px;color:#8a7682">[ Studio Address — Bangalore ]</div>
+    </div>
+    <div style="display:flex;gap:48px;font-size:14px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <a href="index.html">Home</a>
+        <a href="classes.html">Classes</a>
+        <a href="about.html">About</a>
+        <a href="about.html#contact">Contact</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <span style="color:#8a7682">Follow</span>
+        <span>@dancewithpri</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
